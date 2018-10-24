@@ -1,0 +1,106 @@
+:root {
+    --color-main: #0af;
+}
+body {
+    background: #eee;
+}
+.content {
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    width: 70vw;
+    max-width: 60rem;
+    margin: 2rem auto;
+    padding: 3rem;
+    border: 2px solid var(--color-main);
+    box-shadow: 0 0 1rem 0 #aaa;
+    border-radius: 0 0.3rem 0.3rem 0.3rem;
+    background: white;
+    color: #555;
+}
+.content header {
+    font-family: sans;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.content .back {
+    display: block;
+    position: relative;
+    top: calc(-3rem - 2px);
+    left: calc(-6rem - 2px);
+    width: 1rem;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+    border: 2px solid var(--color-main);
+    border-right: none;
+}
+.content .back i {
+    transition-duration: 0.3s;
+}
+.content .back:hover i {
+    transform: translateX(-0.5rem);
+}
+.content date {
+    font-family: sans;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+}
+.content p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    transition-duration: 0.3s;
+}
+.content p:hover {
+    color: black;
+}
+.content img {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid var(--color-main);
+    border-radius: 0.3rem;
+    transition-duration: 0.5s;
+}
+.content imgcaption {
+    position: relative;
+    top: -15px;
+    font-size: 12px;
+    width: 13rem;
+    margin: 0 auto;
+    display: block;
+    background: white;
+    border-radius: 0.3rem;
+    border: 2px solid var(--color-main);
+    text-align: center;
+    line-height: 1rem;
+    padding: 0.3rem;
+    transition-duration: 0.5s;
+}
+.content img:hover, .content imgcaption:hover ~ img {
+    box-shadow: 0 0 1rem 0 #aaa;
+    transform: scale(1.1);
+}
+.content img:hover ~ imgcaption, .content imgcaption:hover {
+    transform: translateY(30px);
+}
+.content imgcaption:hover {
+    transform: scale(1.2);
+}
+easteregg {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    height: 1rem;
+}
+easteregg a {
+    visibility: hidden;
+    color: transparent;
+    transition-duration: 1.5s;
+    cursor: help;
+    line-height: 1rem;
+    text-decoration: none;
+}
+easteregg:hover a {
+    visibility: visible;
+    color: #ddd;
+}
