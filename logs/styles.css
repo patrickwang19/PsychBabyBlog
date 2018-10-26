@@ -29,6 +29,7 @@ body {
     top: calc(-3rem - 2px);
     left: calc(-6rem - 2px);
     width: 1rem;
+    
     background: white;
     padding: 0.5rem 1rem;
     border-radius: 0.3rem 0 0 0.3rem;
