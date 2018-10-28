@@ -18,6 +18,7 @@ body {
     border: 2px solid;
     border-radius: 0.3rem;
     background: white;
+    font-weight: bold;
 }
 .btns i {
     transition-duration: 0.3s;
